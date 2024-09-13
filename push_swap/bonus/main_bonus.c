@@ -42,6 +42,8 @@ int	main(int ac, char **av)
 		return (1);
 	else if (ac == 2)
 	{
+		if (only_space_av(av[1]))
+			return (1);
 		flag_av = true;
 		av = ft_split(av[1], ' ');
 		init_stack(&a, av, flag_av);
