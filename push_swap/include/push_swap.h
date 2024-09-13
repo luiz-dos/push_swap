@@ -59,6 +59,7 @@ void				ra(t_stack **a);
 void				rb(t_stack **b);
 void				rr(t_stack **a, t_stack **b);
 long				ft_atol(const char *nptr);
+int					only_space_av(char *str);
 int					check_av(char *av, long nbr);
 int					non_numeric(char *str);
 void				push(t_stack **dest, t_stack **src);
