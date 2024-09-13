@@ -12,6 +12,18 @@
 
 #include "push_swap.h"
 
+int	only_space_av(char *str)
+{
+	int i;
+
+	i = 0;
+	while(str[i] == ' ')
+		i++;
+	if (str[i] == '\0')
+		return (1);
+	return (0);
+}
+
 int	check_duplicate(t_stack *stack, long nbr)
 {
 	t_stack	*current;
